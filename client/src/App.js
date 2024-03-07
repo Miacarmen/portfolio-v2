@@ -8,12 +8,13 @@ function App() {
   return (
     <>
     <Router>
-      <div>
+      <div className='App bg-accent'>
 
-      </div>
+      
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
+      </div>
     </Router>
     </>
   );
