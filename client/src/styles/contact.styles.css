@@ -35,6 +35,8 @@
 .contact-form label {
   text-align: left;
   margin-right: 10px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
 }
 
 .contact-form input {
@@ -49,7 +51,7 @@
 
 #message {
   height: 150px;
-  margin-bottom: 7px;
+  margin-bottom: 12px;
 }
 
 
@@ -62,10 +64,11 @@
     font-family: 'TAN-BUSTER', 'Lato', sans-serif;
     padding: 7px;
     border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form button:hover {
     background-color: #2A1F1E;
-    border: 1px solid #ffcae0;
+    /* border: 1px solid #ffcae0; */
     color: #ffcae0;
 }

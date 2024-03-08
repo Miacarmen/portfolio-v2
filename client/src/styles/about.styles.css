@@ -92,6 +92,14 @@
     font-size: 28px;
 }
 
+.dev-cat {
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 28px;
+    padding-top: 1em;
+}
+
 .btn-container {
   display: flex;
   align-items: center;
@@ -105,14 +113,15 @@
     transition: background-color 0.3s;
     border: none;
     font-family: 'TAN-BUSTER', 'Lato', sans-serif;
-    padding: 2em 6em 2em 6em;
+    padding: 2em 5em 2em 5em;
     border-radius: 50px;
     font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .resume-btn:hover {
     background-color: #2A1F1E;
-    border: 1px solid #ffcae0;
+    /* border: 1px solid #ffcae0; */
     color: #ffcae0;
 }
 
