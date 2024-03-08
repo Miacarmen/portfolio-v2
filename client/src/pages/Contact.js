@@ -9,12 +9,12 @@ const Contact = () => {
     <div className='main-container'>
       <NavBar />
       <div className='grid-container-2'>
-        <div className='col-3'>
+        <div className='col-1-2'>
           <h1 className='contact-head'>Contact</h1>
           <p className='tagline'>Need a new website or branding for your product? 
           <br /> Get in Touch!</p>
         </div>
-        <div className='col-4'>
+        <div className='col-2-2'>
           <form class='contact-form'>
             <label for='name'>Name:</label>
             <input type='text' id='name' name='name' required />

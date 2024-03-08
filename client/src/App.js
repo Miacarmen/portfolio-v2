@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Work from './pages/Work';
 import Contact from './pages/Contact';
+import NavBar from './components/Navigation/NavBar';
 import Footer from './components/Footer/Footer';
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
     <Router>
       <div className='App bg-accent'>
 
-      
+      <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
