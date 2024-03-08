@@ -1,11 +1,12 @@
 import React from 'react'
 
+import HomeNav from '../components/Navigation/HomeNav.js';
+import Footer from '../components/Footer/Footer.js';
+
 const Home = () => {
   return (
     <div className='main-container'>
-        {/* <div className='col-1'>
-                <h2>GH</h2>
-            </div> */}
+        <HomeNav />
         <div className='grid-container'>
             
             <div className='col-1'>
@@ -23,6 +24,7 @@ const Home = () => {
                 </ul>
                 </div>
             </div>
+        <Footer />
     </div>
   )
 }
