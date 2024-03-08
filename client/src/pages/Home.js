@@ -1,12 +1,13 @@
 import React from 'react'
 
+import NavBar from '../components/Navigation/NavBar.js';
 import HomeNav from '../components/Navigation/HomeNav.js';
 import Footer from '../components/Footer/Footer.js';
 
 const Home = () => {
   return (
     <div className='main-container'>
-        <HomeNav />
+        <NavBar />
         <div className='grid-container'>
             
             <div className='col-1'>
@@ -15,13 +16,14 @@ const Home = () => {
             <p className='tagline'>Full Stack Developer / UX/UI Designer</p>
             </div>
             <div className='col-2'>
-                <ul className='home-nav'>
+                {/* <ul className='home-nav'>
                     <li>
                         WORK
                     </li>
                     <li>ABOUT</li>
                     <li>CONTACT</li>
-                </ul>
+                </ul> */}
+                <HomeNav />
                 </div>
             </div>
         <Footer />
