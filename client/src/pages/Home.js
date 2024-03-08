@@ -1,5 +1,7 @@
 import React from 'react'
 
+import '../styles/home.styles.css';
+
 import NavBar from '../components/Navigation/NavBar.js';
 import HomeNav from '../components/Navigation/HomeNav.js';
 import Footer from '../components/Footer/Footer.js';

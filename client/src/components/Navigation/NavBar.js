@@ -1,15 +1,38 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 const NavBar = () => {
-  return (
-    <div className='social-nav'>
-      <ul className='social-links'>
-      <Link to='https://github.com/Miacarmen' style={{ textDecoration: 'none' }}><li>GH</li></Link>
-        <Link to='https://www.linkedin.com/in/maitreya-carmen-7750a6b8/' style={{ textDecoration: 'none' }}><li>LI</li></Link>
-      </ul>
-    </div>
-  )
-}
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
 
-export default NavBar
+  return (
+    <div className='nav-container'>
+      {isHomePage ? (
+        <div className='social-nav'>
+          <ul className='social-links'>
+            <Link
+              to='https://github.com/Miacarmen'
+              style={{ textDecoration: 'none' }}
+            >
+              <li>GH</li>
+            </Link>
+            <Link
+              to='https://www.linkedin.com/in/maitreya-carmen-7750a6b8/'
+              style={{ textDecoration: 'none' }}
+            >
+              <li>LI</li>
+            </Link>
+          </ul>
+        </div>
+      ) : (
+        <div className='home-link'>
+          <Link to='/' style={{ textDecoration: 'none' }}>
+            <p>HOME</p>
+          </Link>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default NavBar;

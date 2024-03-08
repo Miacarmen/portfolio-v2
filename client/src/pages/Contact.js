@@ -1,9 +1,38 @@
-import React from 'react'
+import React from 'react';
+
+import '../styles/contact.styles.css';
+
+import NavBar from '../components/Navigation/NavBar';
 
 const Contact = () => {
   return (
-    <div>Contact</div>
-  )
-}
+    <div className='main-container'>
+      <NavBar />
+      <div className='grid-container-2'>
+        <div className='col-3'>
+          <h1 className='contact-head'>Contact</h1>
+          <p className='tagline'>Need a new website or branding for your product? 
+          <br /> Get in Touch!</p>
+        </div>
+        <div className='col-4'>
+          <form class='contact-form'>
+            <label for='name'>Name:</label>
+            <input type='text' id='name' name='name' required />
 
-export default Contact
+            <label for='email'>Email:</label>
+            <input type='email' id='email' name='email' required />
+
+            <label for='message'>Message:</label>
+            <input type='text' id='message' name='message' required />
+
+            <button className='submit-btn' type='submit'>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Contact;
