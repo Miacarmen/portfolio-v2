@@ -42,25 +42,27 @@
     top: 50%; /* Start from the middle */
     right: 0;
     transform: translate(
-      -40%,
+      -10%,
       -50%
-    ); /* Adjust to center horizontally and vertically */
-    z-index: 0; /* Ensure it's behind the sticky column */
+    ); /* Adjust horizontally and vertically */
+    z-index: 0; /* place behind the sticky column */
   }
 
-.col-2-4 h2 {
+.link-title {
   font-family: 'TAN-BUSTER';
   font-size: 35px;
   color: #ffcae0;
 }
 
-.col-2-4 p {
+.custom-link {
   font-family: 'Lato', sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 20px;
   padding-bottom: 2em;
   list-style-type: disc;
+  text-decoration: none;
+    color: #f8f8ff !important;;
 }
 
 .col-2-4 p::before {
@@ -71,4 +73,9 @@
   margin-left: 1em; /* Adjust left margin to push the bullet point to the right */
 }
 
-
+.col-3-4 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 1rem;
+  }

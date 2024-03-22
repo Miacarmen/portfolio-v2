@@ -70,6 +70,21 @@
   cursor: pointer;
 }
 
+.page-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+  transform: rotate(-90deg);
+}
+
+/* .page-nav p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  color: #f8f8ff;
+} */
+
 .footer {
   position: fixed;
   bottom: 0;

@@ -25,8 +25,12 @@ const NavBar = () => {
           </ul>
         </div>
       ) : (
-        <div className='home-link'>
-          <Link to='/' style={{ textDecoration: 'none' }}>
+        <div className='page-specific-nav'>
+          {/* <Link to='/work' style={{ textDecoration: 'none' }}>
+            <p>WORK</p>
+          </Link> */}
+
+          <Link to='/' className='home-link' style={{ textDecoration: 'none' }} >
             <p>HOME</p>
           </Link>
         </div>
