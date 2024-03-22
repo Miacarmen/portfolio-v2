@@ -23,7 +23,7 @@ const Contact = () => {
             <input type='email' id='email' name='email' required />
 
             <label for='message'>Message:</label>
-            <input type='text' id='message' name='message' required />
+            <textarea type='text' id='message' name='message' required />
 
             <button className='submit-btn' type='submit'>
               Send Message

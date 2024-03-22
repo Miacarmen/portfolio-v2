@@ -1,7 +1,7 @@
 .grid-container-2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 6rem; 
+  gap: 6rem;
   padding: 4em 4em 4em 4em;
 }
 
@@ -42,33 +42,39 @@
 .contact-form input {
   width: 345px;
   border-radius: 5px;
-  background-color: #f8f8ff
+  background-color: #f8f8ff;
 }
 
-#name, #email {
+.contact-form textarea {
+  width: 345px;
+  height: 150px;
+  margin-bottom: 12px;
+  border-radius: 5px;
+  background-color: #f8f8ff;
+  padding: 5px;
+  vertical-align: top; /* text alignment to top */
+  font-family: 'Lato', sans-serif;
+}
+
+#name,
+#email {
   height: 30px;
 }
 
-#message {
-  height: 150px;
-  margin-bottom: 12px;
-}
-
-
 .submit-btn {
-    background-color: #ffcae0;
-    color: #362624;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    border: none;
-    font-family: 'TAN-BUSTER', 'Lato', sans-serif;
-    padding: 7px;
-    border-radius: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffcae0;
+  color: #362624;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: none;
+  font-family: 'TAN-BUSTER', 'Lato', sans-serif;
+  padding: 7px;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form button:hover {
-    background-color: #2A1F1E;
-    /* border: 1px solid #ffcae0; */
-    color: #ffcae0;
+  background-color: #2a1f1e;
+  /* border: 1px solid #ffcae0; */
+  color: #ffcae0;
 }

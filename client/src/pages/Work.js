@@ -32,6 +32,7 @@ const Work = ({ linkData }) => {
             and Product Branding
           </p>
         </div>
+       
         <div className='col-2-4'>
           {linkData.map((data) => (
             <Link
@@ -40,7 +41,7 @@ const Work = ({ linkData }) => {
               className='custom-link'
             >
               <h2 className='link-title'>{data.title}</h2>
-              <p className='link-desc'>{data.desc}</p>
+              <p className='link-desc'>{data.subtitle}</p>
             </Link>
           ))}
 
@@ -50,6 +51,7 @@ const Work = ({ linkData }) => {
             </div>
           )}
         </div>
+       
       </div>
     </div>
   );
