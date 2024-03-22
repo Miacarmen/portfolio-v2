@@ -15,7 +15,7 @@ const NavBar = () => {
             position: 'fixed',
             top: 0,
             left: 0,
-            padding: '2rem',
+            padding: '4rem 2rem',
             transform: 'rotate(-90deg)',
           }}
         >
@@ -26,8 +26,8 @@ const NavBar = () => {
               display: 'flex',
               gap: '1rem',
               fontFamily: 'Lato, sans-serif',
-              fontWeight: 100,
-              fontSize: '20px',
+              fontWeight: 300,
+              fontSize: '15px',
             }}
           >
             <li>

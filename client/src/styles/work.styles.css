@@ -71,6 +71,13 @@
   color: #f8f8ff !important;
 }
 
+.link-desc {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 20px;
+}
+
 .col-2-4 p::before {
   display: inline-block;
   width: 1em; /* space between bullet point and text */
