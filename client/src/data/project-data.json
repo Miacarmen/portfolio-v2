@@ -13,7 +13,7 @@
         "path": "'/work/2",
         "subtitle": "React Developement",
         "desc": "Description About Project",
-        "imgURL": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+        "imgURL": "https://placehold.jp/950x600.png"
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "path": "'/work/3",
         "subtitle": "Design & Development",
         "desc": "Description About Project",
-        "imgURL": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+        "imgURL": "https://placehold.jp/950x600.png"
     },
     {
         "id": 4,
@@ -29,7 +29,7 @@
         "path": "'/work/4",
         "subtitle": "Full Stack React Development",
         "desc": "Description About Project",
-        "imgURL": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+        "imgURL": "https://placehold.jp/950x600.png"
     },
     {
         "id": 5,
@@ -37,7 +37,7 @@
         "path": "'/work/5",
         "subtitle": "UX/UI Design",
         "desc": "Description About Project",
-        "imgURL": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+        "imgURL": "https://placehold.jp/950x600.png"
     },
     {
         "id": 6,
@@ -45,7 +45,7 @@
         "path": "'/work/6",
         "subtitle": "Graphic Design & Package Design",
         "desc": "Description About Project",
-        "imgURL": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+        "imgURL": "https://placehold.jp/950x600.png"
     },
     {
         "id": 7,
@@ -53,7 +53,7 @@
         "path": "'/work/7",
         "subtitle": "Design & Development",
         "desc": "Description About Project",
-        "imgURL": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+        "imgURL": "https://placehold.jp/950x600.png"
     },
     {
         "id": 8,
@@ -61,6 +61,6 @@
         "path": "Additional information for Link 1",
         "subtitle": "Description for Link 1",
         "desc": "Description for Link 1",
-        "imgURL": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+        "imgURL": "https://placehold.jp/950x600.png"
     }
 ]

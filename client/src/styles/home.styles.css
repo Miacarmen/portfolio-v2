@@ -45,4 +45,5 @@
   .home-nav li:hover {
     color: #ffcae0;
     cursor: pointer;
+    font-style: italic;
   }

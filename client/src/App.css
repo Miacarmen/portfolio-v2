@@ -24,7 +24,6 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  /* border: 1px solid blue; */
   align-items: center;
   justify-content: center;
 }
@@ -47,6 +46,7 @@
 .home-link p:hover {
   color: #ffcae0;
   cursor: pointer;
+  font-style: italic;
 }
 
 /* Inline Styled */
@@ -71,9 +71,18 @@
   color: #f8f8ff;
 }
 
-.social-links li:hover {
+#gh:hover {
   color: #ffcae0;
   cursor: pointer;
+  font-style: italic;
+  padding-left: 2px;
+}
+
+#li:hover {
+  color: #ffcae0;
+  cursor: pointer;
+  font-style: italic;
+  padding-left: 2px;
 }
 
 .work-link {
@@ -94,6 +103,7 @@
 .work-link p:hover {
   color: #ffcae0;
   cursor: pointer;
+  font-style: italic;
 }
 
 .footer {

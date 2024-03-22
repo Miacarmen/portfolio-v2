@@ -29,23 +29,28 @@ const NavBar = () => {
               fontWeight: 300,
               fontSize: '15px',
             }}
+            
           >
-            <li>
+            <li id='gh'>
               <a
                 href='https://github.com/Miacarmen'
                 target='_blank'
                 rel='noopener noreferrer'
                 style={{ color: '#f8f8ff', textDecoration: 'none' }}
+                onMouseEnter={(e) => (e.target.style.color = '#ffcae0')} 
+                onMouseLeave={(e) => (e.target.style.color = '#f8f8ff')}
               >
                 GH
               </a>
             </li>
-            <li>
+            <li id='li'>
               <a
                 href='https://www.linkedin.com/in/maitreya-carmen-7750a6b8/'
                 target='_blank'
                 rel='noopener noreferrer'
                 style={{ color: '#f8f8ff', textDecoration: 'none' }}
+                onMouseEnter={(e) => (e.target.style.color = '#ffcae0')} 
+                onMouseLeave={(e) => (e.target.style.color = '#f8f8ff')}
               >
                 LI
               </a>
