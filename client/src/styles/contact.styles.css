@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 0em 0em 0em 4em;
-  gap: 3em;
+  gap: 5em;
 }
 
 .col-1-2-wrapper {
@@ -28,7 +28,7 @@
 
 .contact-head {
   line-height: 230px;
-  font-size: 175px;
+  font-size: 155px;
 }
 
 .contact-subhead {
