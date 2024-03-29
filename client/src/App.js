@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 
 // Pages & Components
 import Home from './pages/Home';
@@ -9,25 +9,30 @@ import ProjectPage from './pages/ProjectPage';
 import Contact from './pages/Contact';
 import NavBar from './components/Navigation/NavBar';
 import Footer from './components/Footer/Footer';
-
 import linkData from './data/project-data.json';
 
+import { AnimatePresence } from 'framer-motion';
+
 function App() {
+  const location = useLocation();
+
   return (
     <>
-      <Router>
-        <div className='App bg-accent'>
+        <div className='App'>
+        <AnimatePresence mode='wait'>
           <NavBar />
-          <Routes>
-            <Route path='/' element={<Home />} />
+         
+          <Routes location={location} key={location.pathname}>
+            <Route path='/' index element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/work' element={<Work linkData={linkData} />} />
             <Route path='/work/:id' element={<ProjectPage />} />
             <Route path='/contact' element={<Contact />} />
           </Routes>
+         
           <Footer />
+          </AnimatePresence>
         </div>
-      </Router>
     </>
   );
 }

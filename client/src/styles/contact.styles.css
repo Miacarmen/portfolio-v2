@@ -15,7 +15,6 @@
   justify-content: center;
   align-items: center;
   text-align: center;
- 
 }
 
 .col-2-2 {
@@ -37,6 +36,7 @@
   font-style: normal;
   font-size: 37px;
   padding-bottom: 1em;
+  animation: slide-bottom 1s;
 }
 
 .contact-form {
@@ -87,4 +87,15 @@
   background-color: #2a1f1e;
   /* border: 1px solid #ffcae0; */
   color: #ffcae0;
+}
+
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

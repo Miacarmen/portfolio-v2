@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { BsArrowDownShort } from 'react-icons/bs';
+import { motion } from 'framer-motion';
 
 import '../styles/work.styles.css';
 import linkData from '../data/project-data.json';
 
 const Work = ({ linkData }) => {
-
   const [showScrollIndicator, setShowScrollIndicator] = useState(true);
 
   useEffect(() => {
@@ -32,7 +32,7 @@ const Work = ({ linkData }) => {
             and Product Branding
           </p>
         </div>
-       
+
         <div className='col-2-4'>
           {linkData.map((data) => (
             <Link
@@ -51,7 +51,6 @@ const Work = ({ linkData }) => {
             </div>
           )}
         </div>
-       
       </div>
     </div>
   );

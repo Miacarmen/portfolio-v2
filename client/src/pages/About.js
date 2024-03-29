@@ -1,5 +1,4 @@
 import React from 'react';
-
 import '../styles/about.styles.css';
 
 const About = () => {
@@ -38,7 +37,7 @@ const About = () => {
 
         <div className='col-2-3'>
           <img
-            src='https://i.imgur.com/3Z3z3Zv.jpg'
+            src='https://placehold.jp/360x600.png'
             alt='Mia Carmen'
             className='about-img'
           />
