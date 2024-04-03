@@ -123,3 +123,29 @@
     opacity: 1;
   }
 }
+
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .work-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+  }
+  .col-1-4-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blue;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .work-tagline {
+    font-size: 21px;
+  }
+}

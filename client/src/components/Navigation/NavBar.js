@@ -1,81 +1,72 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
+import '../../styles/nav.styles.css';
+
 const NavBar = () => {
   const location = useLocation();
-  const isHomePage = location.pathname === '/';
-  const isProjectPage = location.pathname.startsWith('/work/');
 
-  return (
-    <div className='nav-container'>
-      {isHomePage && (
-        <div
-          className='social-nav'
-          style={{
-            position: 'fixed',
-            top: 0,
-            left: 0,
-            padding: '4rem 2rem',
-            transform: 'rotate(-90deg)',
-          }}
-        >
-          <ul
-            className='social-links'
-            style={{
-              listStyle: 'none',
-              display: 'flex',
-              gap: '1rem',
-              fontFamily: 'Lato, sans-serif',
-              fontWeight: 300,
-              fontSize: '15px',
-            }}
-            
-          >
-            <li id='gh'>
-              <a
-                href='https://github.com/Miacarmen'
-                target='_blank'
-                rel='noopener noreferrer'
-                style={{ color: '#f8f8ff', textDecoration: 'none' }}
-                onMouseEnter={(e) => (e.target.style.color = '#ffcae0')} 
-                onMouseLeave={(e) => (e.target.style.color = '#f8f8ff')}
-              >
-                GH
-              </a>
-            </li>
-            <li id='li'>
-              <a
-                href='https://www.linkedin.com/in/maitreya-carmen-7750a6b8/'
-                target='_blank'
-                rel='noopener noreferrer'
-                style={{ color: '#f8f8ff', textDecoration: 'none' }}
-                onMouseEnter={(e) => (e.target.style.color = '#ffcae0')} 
-                onMouseLeave={(e) => (e.target.style.color = '#f8f8ff')}
-              >
-                LI
-              </a>
-            </li>
-          </ul>
-        </div>
-      )}
-
-      {isProjectPage ? (
-        <div className='work-link'>
-          <Link to='/work' style={{ textDecoration: 'none' }}>
-            <p>WORK</p>
-          </Link>
-        </div>
-      ) : (
-        !isHomePage && (
-          <div className='home-link'>
-            <Link to='/' style={{ textDecoration: 'none' }}>
-              <p>HOME</p>
-            </Link>
-          </div>
-        )
-      )}
-    </div>
+  let navbarContent = (
+    <Link
+      key='nav-link'
+      to='/'
+      className='nav-link'
+      onMouseEnter={(e) => (e.target.style.color = '#ffcae0')}
+      onMouseLeave={(e) => (e.target.style.color = '#f8f8ff')}
+    >
+      HOME
+    </Link>
   );
+
+  if (location.pathname === '/') {
+    navbarContent = (
+      <div className='social-nav'>
+        <ul className='social-links'>
+          <li>
+            <a
+              href='https://github.com/Miacarmen'
+              target='_blank'
+              rel='noopener noreferrer'
+              style={{ color: '#f8f8ff', textDecoration: 'none' }}
+              onMouseEnter={(e) => (e.target.style.color = '#ffcae0')}
+              onMouseLeave={(e) => (e.target.style.color = '#f8f8ff')}
+            >
+              GH
+            </a>
+          </li>
+          <li>
+            <a
+              href='https://www.linkedin.com/in/maitreya-carmen-7750a6b8/'
+              target='_blank'
+              rel='noopener noreferrer'
+              style={{ color: '#f8f8ff', textDecoration: 'none' }}
+              onMouseEnter={(e) => (e.target.style.color = '#ffcae0')}
+              onMouseLeave={(e) => (e.target.style.color = '#f8f8ff')}
+            >
+              LI
+            </a>
+          </li>
+        </ul>
+      </div>
+    );
+  } else if (
+    location.pathname.startsWith('/work/') &&
+    location.pathname.length > '/work/'.length
+  ) {
+    navbarContent = (
+      <Link
+        to='/work'
+        className='nav-link'
+        // style={navLinkStyle}
+        onMouseEnter={(e) => (e.target.style.color = '#ffcae0')}
+        onMouseLeave={(e) => (e.target.style.color = '#f8f8ff')}
+      >
+        WORK
+      </Link>
+    );
+  }
+
+  return <div className='nav-container'>{navbarContent}</div>;
 };
 
 export default NavBar;

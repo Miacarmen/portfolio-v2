@@ -69,3 +69,46 @@ h1 {
     opacity: 1;
   }
 }
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .main-container {
+    display: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .col-1-mobile {
+    display: fixed;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .special-mobile {
+    font-size: 70px;
+    align-items: center;
+    line-height: 90px;
+  }
+
+  .tagline {
+    font-size: 21px;
+  }
+
+  .home-nav-mobile {
+    text-align: center;
+    margin: 0em 0em 3em 0em;
+  }
+
+  .home-nav {
+    list-style: none;
+    font-family: 'TAN-BUSTER';
+    font-size: 1.5rem;
+    animation: fadeIn 3s;
+  }
+
+  .home-nav li:active {
+    color: #ffcae0;
+    cursor: pointer;
+    font-style: italic;
+  }
+}
