@@ -1,12 +1,22 @@
 {
   "name": "portfolio-v2",
   "version": "1.0.0",
-  "description": "",
+  "description": "Professional Portfolio Showcasing My Development and Design Work",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "portfolio",
+    "web development",
+    "web design",
+    "front-end",
+    "back-end",
+    "full-stack",
+    "developer",
+    "designer"
+  ],
+  "author": "Mia Carmen",
+  "homepage": "https://miadcarmen.com",
   "license": "ISC"
 }
